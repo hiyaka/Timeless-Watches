@@ -25,6 +25,10 @@ app.get("/qui-sommes-nous", function (req, res) {
     res.render("whoweare.eta", { menu: "qui-sommes-nous" });
 });
 
+app.get("/contact", function (req, res) {
+    res.render("contact.eta", { menu: "contact" });
+});
+
 app.get("/nos-produits/", function (req, res) {
     console.log();
     res.render("products.eta", { products, menu: "nos-produits" });
