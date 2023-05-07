@@ -15,7 +15,7 @@
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="/product/<%= it.products[i].id %>"
+                                    <a href="/nos-produits/<%= it.products[i].id %>"
                                         class="btn btn-sm btn-outline-secondary">Voir
                                         la montre</a>
                                 </div>
