@@ -1,0 +1,34 @@
+<% layout('./layout') %>
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img class="img-fluid" src="/img/pdg.jpg" alt="Image de l'historique">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h2 class="text-uppercase">Notre histoire</h2>
+                <p>
+                    Timeless Watches a été fondée en 2005 par John Smith, un passionné d'horlogerie ayant une grande
+                    expérience dans l'industrie.
+                </p>
+                <p>
+                    Depuis sa création, Timeless Watches est devenue une référence dans le monde de l'horlogerie de
+                    luxe, avec une large sélection de montres haut de gamme proposées sur son site web et dans ses
+                    boutiques physiques situées dans des villes renommées telles que New York, Paris et Hong Kong.
+                </p>
+                <p>
+                    En 2010, Timeless Watches a commencé à produire ses propres montres en travaillant avec des
+                    horlogers renommés pour concevoir et fabriquer des modèles uniques et innovants. Ces montres
+                    exclusives sont devenues très prisées par les amateurs d'horlogerie de luxe, et ont contribué à
+                    renforcer la réputation de Timeless Watches dans le monde entier.
+                </p>
+                <p>
+                    Aujourd'hui, Timeless Watches continue d'offrir une sélection soigneusement choisie de montres de
+                    qualité supérieure, ainsi que des modèles exclusifs de sa propre production. La société reste fidèle
+                    à sa passion pour l'horlogerie, et s'engage à offrir à ses clients une expérience d'achat
+                    exceptionnelle, avec un service clientèle de premier ordre et une livraison rapide dans le monde
+                    entier.
+                </p>
+            </div>
+        </div>
+    </div>

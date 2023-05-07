@@ -1,0 +1,32 @@
+<% layout('./layout') %>
+
+    <div class="container-fluid">
+        <img src="/img/accueil.jpg" class="w-100" alt="Image d'accueil">
+    </div>
+
+    <!-- Contenu -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1 class="display-4">Bienvenue chez Timeless Watches</h1>
+                <p class="lead">Nous sommes ravis de vous accueillir dans notre boutique en ligne dédiée à la vente de
+                    montres de qualité.
+                    Chez Timeless Watches, nous sommes passionnés par les montres et nous croyons que chaque montre
+                    est un bijou unique qui reflète la personnalité de celui ou celle qui la porte. C'est pourquoi nous
+                    proposons une large sélection de montres de différentes marques, styles et couleurs pour répondre à
+                    tous les goûts et toutes les occasions.</p>
+                <a href="/nos-produits" class="btn btn-primary btn-lg">Découvrir nos montres</a>
+            </div>
+            <div class="col-md-6">
+                <img src="/img/collection-accueil.jpg" class="w-75" alt="Image de montre">
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Timeless Watches. Tous droits réservés.</p>
+                </div>
+                <div class="col
