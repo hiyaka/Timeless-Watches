@@ -3,7 +3,7 @@
 
     <div class="row mt-2">
         <div class="col">
-            <ul class="nav">
+            <ul class="nav nav-pills justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/nos-produits">Tous</a>
                 </li>
@@ -12,7 +12,7 @@
                         <% let type=it.products[i].type ; %>
                             <% if (!types.includes(type)) { %>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="/nos-produits/type/<%= type %>">
+                                    <a class="nav-link" href="/nos-produits/type/<%= type %>">
                                         <%= type %>
                                     </a>
                                 </li>
