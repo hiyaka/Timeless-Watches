@@ -1,27 +1,54 @@
 <% layout('./layout') %>
 
+
+    <div class="row mt-2">
+        <div class="col">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/nos-produits">Tous</a>
+                </li>
+                <% let types=[]; %>
+                    <% for (let i=0 ; i < it.products.length ; i++) { %>
+                        <% let type=it.products[i].type ; %>
+                            <% if (!types.includes(type)) { %>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="/nos-produits/type/<%= type %>">
+                                        <%= type %>
+                                    </a>
+                                </li>
+                                <% types.push(type); %>
+                                    <% } %>
+                                        <% } %>
+            </ul>
+        </div>
+    </div>
+    <!-- 
+ Si productFiltered est present, utilise productFiltered.id etc... si il n'y a rien utilise product 
+ -->
     <div class="row mt-5">
-        <% for (let i=0; i < it.products.length; i++) { %>
-            <% let products=it.products[i] ; %>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="/img/montre.jpg" alt="<%= it.products[i].name %>">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <%= it.products[i].name %>
-                            </h5>
-                            <p class="card-text">
-                                <%= it.products[i].descriptionShort %>
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="/nos-produits/<%= it.products[i].id %>"
-                                        class="btn btn-sm btn-outline-secondary">Voir
-                                        la montre</a>
+        <% let products=it.filteredProducts ? it.filteredProducts : it.products; %>
+            <% for (let i=0; i < products.length; i++) { %>
+                <% let product=products[i] ; %>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="/img/montre.jpg" alt="<%= product.name %>">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= product.name %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= product.descriptionShort %>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="/nos-produits/<%= product.id %>"
+                                            class="btn btn-sm btn-outline-secondary">Voir
+                                            la montre</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <% } %>
+                    <% } %>
+
     </div>
