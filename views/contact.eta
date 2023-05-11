@@ -1,0 +1,44 @@
+<% layout('./layout') %>
+
+
+    <div class="container py-5">
+        <h1 class="mb-4">Contactez-nous</h1>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Sujet</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Coordonnées</h4>
+                <p>N'hésitez pas à nous contacter si vous avez la moindre question ou demande d'information :</p>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-geo-alt"></i> 123 Rue des Montres de Luxe, 75001 Paris</li>
+                    <li><i class="bi bi-telephone"></i> +33 (0)1 23 45 67 89</li>
+                    <li><i class="bi bi-envelope"></i> Timeless.Watches@montresdeluxe.com</li>
+                </ul>
+                <h4 class="mt-4">Service client</h4>
+                <p>Nous sommes à votre disposition du lundi au vendredi de 9h à 18h :</p>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-telephone"></i> +33 (0)1 23 45 67 89</li>
+                    <li><i class="bi bi-envelope"></i> serviceclient@montresdeluxe.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>

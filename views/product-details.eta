@@ -1,0 +1,20 @@
+<% layout('./layout') %>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img src="/img/montre.jpg" class="img-fluid" alt="Montre">
+            </div>
+            <div class="col-md-8">
+                <h1>
+                    <%= it.product.name %>
+                </h1>
+                <h2>
+                    <%= it.product.price %>€
+                </h2>
+                <p>
+                    <%= it.product.descriptionLong %>
+                </p>
+            </div>
+        </div>
+    </div>

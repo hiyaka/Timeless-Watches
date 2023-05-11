@@ -1,0 +1,17 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin-bottom: -60px;
+    /* hauteur du footer */
+}
+
+.footer,
+.push {
+    height: 60px;
+    /* hauteur du footer */
+}

@@ -38,6 +38,7 @@ app.get("/nos-produits/type/:type", function (req, res) {
     const { type } = req.params
     const filteredProducts = []
     products.filter(p => p.type === type).forEach(p => filteredProducts.push(p))
+    console.log(filteredProducts)
     res.render("products.eta", { products, filteredProducts, menu: "nos-produits" });
 });
 
